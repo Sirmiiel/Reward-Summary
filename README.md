@@ -1,70 +1,123 @@
-# Getting Started with Create React App
+### README: **Rewards Summary Page for React Application**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+#### **Project Overview**
 
-In the project directory, you can run:
+This project implements a **Rewards Summary Page** using **React** for displaying a user's cashback rewards and transaction history. It includes multiple sections that allow users to view and interact with their rewards, earnings, and cashback history.
 
-### `npm start`
+### **Key Features**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. **Profile Section**:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+   - Displays the user’s profile image, name, and balance.
+   - Includes an **Invite Friends** button that encourages users to invite others to the platform.
 
-### `npm test`
+2. **Earnings Overview**:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   - Displays details of rewards earned from previous transactions (e.g., discounts and promotions).
+   - Shows information such as the amount earned and the date the reward was generated.
 
-### `npm run build`
+3. **Cashback History**:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   - Lists past transactions that contributed to the user’s cashback.
+   - Displays key details such as the **transaction date**, **amount earned**, and **booking details**.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. **Redeem Rewards**:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   - Provides options for users to redeem their rewards via **Direct Cashout** or by **Applying Promo Codes**.
 
-### `npm run eject`
+5. **Animations and Effects**:
+   - Smooth animations are added to enhance user experience, including fade-in effects and hover effects on buttons and transaction items.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### **Folder Structure**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+src/
+├── components/
+│   ├── RewardsPage.js        # Main React component for the Rewards Summary Page
+│   ├── RewardsPage.css       # Styling and animations for the page
+└── App.js                    # Entry point to render RewardsPage
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### **Technology Stack**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **React**: The entire Rewards Summary page is developed as a React component.
+- **CSS**: Standard CSS is used for styling the page. The design is responsive and includes animations and hover effects.
+- **Tailwind CSS**: The initial layout was designed using Tailwind CSS utility classes, but custom CSS was preferred for detailed control over the animations and responsive design.
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### **Implementation Details**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### 1. **Profile Section**
 
-### Code Splitting
+- **Design Choice**: I positioned the profile section at the top of the page, showing the user's avatar, name, and current balance. The layout is responsive, ensuring that the profile image and text stack vertically on mobile but are aligned horizontally on desktop views.
+- **Styling**: I used flexbox for alignment, added padding for spacing, and made the avatar circular using `border-radius: 50%`.
+- **Animation**: The profile section fades in as the page loads, giving a subtle entry animation for a smoother user experience.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+#### 2. **Cashback History**
 
-### Analyzing the Bundle Size
+- **Purpose**: This section shows detailed information about previous cashback transactions, such as the **transaction date**, **amount earned**, and **booking details**.
+- **Design Choice**: A list of previous cashback transactions is presented in a card-like format with clearly separated details.
+- **Styling**: Each transaction is designed using flexbox to ensure the transaction details and amount are aligned neatly. Margins and padding ensure proper spacing, and hover effects highlight each item on interaction.
+- **Animation**: Each cashback history item has a **hover effect** that slightly scales the item and changes the background color. When the section loads, it fades in smoothly.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+#### 3. **Earnings Section**
 
-### Making a Progressive Web App
+- **Design Choice**: The earnings section highlights the user's previously earned rewards from promotions and referrals. The amounts are listed with the date of earning and a brief description of the promotion.
+- **Styling**: Flexbox is used to ensure proper alignment. I added hover effects to provide visual feedback to users when they hover over earnings.
+- **Animation**: Like the cashback history, hover effects are applied to earnings, with a slight background color change and scaling for better interactivity.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+#### 4. **Redeem Rewards Section**
 
-### Advanced Configuration
+- **Design Choice**: Users can choose to **cash out** or **apply promo codes** using two buttons. This encourages users to interact with their rewards.
+- **Styling**: I used flexbox to align the text and icons in a neat row. Buttons are styled with rounded edges and a transition effect on hover.
+- **Animation**: When hovering over the buttons, they lift slightly and change color, providing immediate feedback to users.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+#### 5. **Footer Section**
 
-### Deployment
+- **Design Choice**: The footer contains a **Cash Out Now** button, prominently placed and centered on desktop view, encouraging users to redeem their available balance.
+- **Styling**: The button is styled with a vibrant blue background color and rounded edges, making it the most prominent call to action on the page.
+- **Animation**: The button has a hover effect that lifts it slightly and changes the background color to green, signaling its interactivity.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+### **Animations and Effects**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+I integrated CSS animations and transitions to enhance the user experience:
+
+- **Fade-in Animation**: Applied to the entire page, the profile section, and the cashback history section to create a smooth loading effect.
+- **Hover Effects**: Implemented for interactive elements like buttons, cashback history items, and earnings items. On hover, these elements slightly scale up, and their background colors change to provide visual feedback.
+- **Transitions**: Smooth transitions are added to buttons and hover effects to ensure the interactions feel natural and polished.
+
+---
+
+### **Design and Responsiveness**
+
+The layout is designed to be **responsive** across different screen sizes:
+
+- **Mobile-first approach**: The design is optimized for mobile devices, with components stacking vertically for better readability and usability on smaller screens.
+- **Desktop view**: On larger screens, the layout adjusts to place the profile section on the left side and center the footer and content. Elements are spaced out more generously on desktop to take advantage of the larger screen real estate.
+
+---
+
+### **Key Design Decisions**
+
+1. **Mobile-first Design**: I started with a mobile-friendly layout, ensuring that the page is easy to use and visually appealing on smaller screens. I then introduced media queries to optimize the layout for larger screens (e.g., aligning the profile section to the left).
+2. **Custom Animations**: Instead of relying solely on utility classes, I implemented custom animations to make the page more dynamic. Animations such as **fade-in** for the page loading and **hover effects** on interactive elements improve the overall experience.
+
+3. **User-centric Interactions**: All buttons and interactive elements feature hover effects to enhance usability. This ensures that users have a smooth and responsive experience when navigating the page.
+
+---
+
+### **Future Improvements**
+
+1. **Real Data Integration**: The current version uses dummy data for the cashback history and earnings sections. Future versions can integrate real data from an API to make the rewards page fully functional.
+2. **Advanced Animations**: I can further enhance the animations by introducing more advanced techniques like staggered transitions using libraries like **Framer Motion**.
+
+---
+
+### **Conclusion**
+
+This project demonstrates a **responsive**, **interactive**, and **animated** rewards summary page using **React**. The design choices and animations aim to create an engaging user experience, encouraging interaction with the rewards and cashback history.
