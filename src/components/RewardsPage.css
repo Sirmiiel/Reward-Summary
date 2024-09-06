@@ -60,7 +60,8 @@
     flex-direction: column;
   }
   
-  .profile-image img {
+  .profile-image {
+    background-image: url("https://cdn.usegalileo.ai/stability/c1a1d335-5b66-4a90-9ea8-ebd75c8194e4.png");
     background-size: cover;
     background-position: center;
     width: 128px;
