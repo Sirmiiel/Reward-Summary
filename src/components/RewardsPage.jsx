@@ -1,6 +1,7 @@
 // src/components/RewardsPage.js
 import React from 'react';
 import './RewardsPage.css';
+import ProfilePic from './assets/images/profile pic.jpeg';
 
 const RewardsPage = () => {
   // Dummy data for cashback history
@@ -39,7 +40,7 @@ const RewardsPage = () => {
         <div className="profile-section">
           <div className="profile-container">
             <div className="profile-image">
-            <img src="/profile pic.jpeg" alt="Profile Picture" />
+            <img src="{ProfilePic}" alt="Profile Picture" />
             </div>
             <div className="profile-info">
               <p className="profile-name">Hi, John!</p>

@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.57f9d13f.css",
-    "main.js": "/static/js/main.eb215034.js",
-    "static/js/453.95f478ff.chunk.js": "/static/js/453.95f478ff.chunk.js",
-    "index.html": "/index.html",
-    "main.57f9d13f.css.map": "/static/css/main.57f9d13f.css.map",
-    "main.eb215034.js.map": "/static/js/main.eb215034.js.map",
-    "453.95f478ff.chunk.js.map": "/static/js/453.95f478ff.chunk.js.map"
+    "main.css": "/Reward-Summary/static/css/main.57f9d13f.css",
+    "main.js": "/Reward-Summary/static/js/main.ff0eb158.js",
+    "static/js/453.95f478ff.chunk.js": "/Reward-Summary/static/js/453.95f478ff.chunk.js",
+    "index.html": "/Reward-Summary/index.html",
+    "main.57f9d13f.css.map": "/Reward-Summary/static/css/main.57f9d13f.css.map",
+    "main.ff0eb158.js.map": "/Reward-Summary/static/js/main.ff0eb158.js.map",
+    "453.95f478ff.chunk.js.map": "/Reward-Summary/static/js/453.95f478ff.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.57f9d13f.css",
-    "static/js/main.eb215034.js"
+    "static/js/main.ff0eb158.js"
   ]
 }
