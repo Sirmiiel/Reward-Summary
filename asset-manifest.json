@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Reward-Summary/static/css/main.c4a67862.css",
-    "main.js": "/Reward-Summary/static/js/main.b74e84c3.js",
+    "main.css": "/Reward-Summary/static/css/main.b73321a6.css",
+    "main.js": "/Reward-Summary/static/js/main.417b4f9a.js",
     "static/js/453.95f478ff.chunk.js": "/Reward-Summary/static/js/453.95f478ff.chunk.js",
-    "static/media/profilepic.jpeg": "/Reward-Summary/static/media/profilepic.bce11d66508a3caccb85.jpeg",
+    "static/media/avatar.png": "/Reward-Summary/static/media/avatar.e8e086b7e21ba12d3a76.png",
     "index.html": "/Reward-Summary/index.html",
-    "main.c4a67862.css.map": "/Reward-Summary/static/css/main.c4a67862.css.map",
-    "main.b74e84c3.js.map": "/Reward-Summary/static/js/main.b74e84c3.js.map",
+    "main.b73321a6.css.map": "/Reward-Summary/static/css/main.b73321a6.css.map",
+    "main.417b4f9a.js.map": "/Reward-Summary/static/js/main.417b4f9a.js.map",
     "453.95f478ff.chunk.js.map": "/Reward-Summary/static/js/453.95f478ff.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c4a67862.css",
-    "static/js/main.b74e84c3.js"
+    "static/css/main.b73321a6.css",
+    "static/js/main.417b4f9a.js"
   ]
 }
