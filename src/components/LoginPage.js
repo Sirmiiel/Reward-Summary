@@ -14,7 +14,7 @@ const LoginPage = () => {
     <div className="login-root">
       <div className="login-container">
         <h1 className="login-title">Welcome Back!</h1>
-        <p className="login-description">Log in to access your rewards and track your cashback history.</p>
+        <p className="login-description">Log in to access your records and track your payment history.</p>
         <button className="login-button" onClick={handleLogin}>
           Log In
         </button>
