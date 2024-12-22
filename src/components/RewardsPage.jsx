@@ -1,9 +1,16 @@
-// src/components/RewardsPage.js
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './RewardsPage.css';
 import ProfilePic from '../assets/images/profilepic.jpeg';
 
 const RewardsPage = () => {
+
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    navigate('/');
+  };
+
   // Dummy data for cashback history
   const cashbackHistory = [
     {
@@ -33,7 +40,7 @@ const RewardsPage = () => {
               <path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z" />
             </svg>
           </div>
-          <h2 className="title">Rewards</h2>
+          <h2 className="title">Payments</h2>
         </div>
 
         {/* Profile Section */}
@@ -44,7 +51,7 @@ const RewardsPage = () => {
             </div>
             <div className="profile-info">
               <p className="profile-name">Hi, John!</p>
-              <p className="profile-balance">Your balance: $150</p>
+              <p className="profile-balance">Total Paid: $350</p>
             </div>
           </div>
           <button className="invite-button">Invite friends</button>
@@ -52,29 +59,29 @@ const RewardsPage = () => {
 
 
             {/* Earnings Section */}
-            <h2 className="section-title">Earnings</h2>
+            <h2 className="section-title">Payment History</h2>
         <div className="earning-item">
           <div>
-            <p className="earning-title">$20 off first booking</p>
-            <p className="earning-date">Earned on 12/01</p>
+            <p className="earning-title">-$40 on first booking</p>
+            <p className="earning-date">Paid on 21/12/24</p>
           </div>
           <p className="earning-amount">+$40</p>
         </div>
 
         <div className="earning-item">
           <div>
-            <p className="earning-title">$50 off for referring a friend</p>
-            <p className="earning-date">Earned on 12/15</p>
+            <p className="earning-title">-$50 off for referring a friend</p>
+            <p className="earning-date">Paid on 12/12/24</p>
           </div>
           <p className="earning-amount">+$50</p>
         </div>
 
         <div className="earning-item">
           <div>
-            <p className="earning-title">$100 off for referring a friend</p>
-            <p className="earning-date">Earned on 12/30</p>
+            <p className="earning-title">-$100 off for referring a friend</p>
+            <p className="earning-date">Paid on 02/12/24</p>
           </div>
-          <p className="earning-amount">+$100</p>
+          <p className="earning-amount">+$10</p>
         </div>
 
         {/* Cashback History Section */}
@@ -94,9 +101,9 @@ const RewardsPage = () => {
     
 
         {/* Redeem Rewards Section */}
-        <h2 className="section-title">Redeem Rewards</h2>
+        <h2 className="section-title">Add More Payments</h2>
         <div className="redeem-item">
-          <p className="redeem-title">Direct Cashout</p>
+          <p className="redeem-title">Direct Payment</p>
           <div className="icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
               <path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z" />
@@ -116,8 +123,8 @@ const RewardsPage = () => {
 
       {/* Footer */}
       <div className="footer">
-        <button className="cashout-button">
-          <span>Cash Out Now</span>
+        <button className="cashout-button" onClick={handleLogout}>
+          <span>Log Out</span>
         </button>
         <div className="footer-bg"></div>
       </div>

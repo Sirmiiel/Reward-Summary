@@ -1,5 +1,3 @@
-/* src/components/RewardsPage.css */
-
 /* Base Styles (Mobile-first) */
 .design-root {
     font-family: 'Space Grotesk', 'Noto Sans', sans-serif;
@@ -9,14 +7,14 @@
     flex-direction: column;
     justify-content: space-between;
     overflow-x: hidden;
-    animation: fadeIn 1s ease; /* Fade-in effect for the entire page */
+    animation: fadeIn 1s ease; 
   }
   
   /* Keyframes for fade-in animation */
   @keyframes fadeIn {
     from {
       opacity: 0;
-      transform: translateY(20px); /* Slight slide up */
+      transform: translateY(20px);
     }
     to {
       opacity: 1;
@@ -24,6 +22,27 @@
     }
   }
   
+
+  .logout-button {
+    background-color: #e53e3e;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-left: auto;
+  }
+  
+  .logout-button:hover {
+    background-color: #c53030;
+    transform: translateY(-2px);
+  }
+  
+
+
   .header {
     display: flex;
     align-items: center;
@@ -103,8 +122,8 @@
   }
   
   .invite-button:hover {
-    background-color: #3b72e8; /* Change background on hover */
-    transform: translateY(-3px); /* Lift the button on hover */
+    background-color: #3b72e8; 
+    transform: translateY(-3px); 
   }
   
   /* Cashback History */
@@ -124,8 +143,8 @@
   }
   
   .cashback-history-item:hover {
-    background-color: #3b72e8; /* Change background color on hover */
-    transform: scale(1.05); /* Scale up slightly on hover */
+    background-color: #3b72e8; 
+    transform: scale(1.05); 
   }
   
   .cashback-date {
@@ -152,8 +171,7 @@
   }
   
   /* Earnings Section */
-  .earning-item,
-  .redeem-item {
+  .earning-item, .redeem-item {
     display: flex;
     justify-content: space-between;
     background-color: #111722;
@@ -164,10 +182,9 @@
     transition: transform 0.3s ease, background-color 0.3s ease;
   }
   
-  .earning-item:hover,
-  .redeem-item:hover {
-    background-color: #3b72e8; /* Change background color on hover */
-    transform: scale(1.03); /* Slight scale up */
+  .earning-item:hover, .redeem-item:hover {
+    background-color: #3b72e8; 
+    transform: scale(1.03); 
   }
   
   .earning-title,
@@ -206,8 +223,8 @@
   }
   
   .cashout-button:hover {
-    background-color: #4caf50; /* Change color on hover */
-    transform: translateY(-3px); /* Lift the button on hover */
+    background-color: #4caf50; 
+    transform: translateY(-3px); 
   }
   
   .footer-bg {
