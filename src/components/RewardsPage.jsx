@@ -16,17 +16,17 @@ const RewardsPage = () => {
     {
       date: '2024-01-12',
       amount: 50,
-      bookingDetails: 'Booking ID: B001 - Spa Service',
+      bookingDetails: 'Transaction ID: B001 - Spa Service',
     },
     {
       date: '2024-01-08',
       amount: 30,
-      bookingDetails: 'Booking ID: B002 - Gym Membership',
+      bookingDetails: 'Transaction ID: B002 - Gym Membership',
     },
     {
       date: '2024-01-01',
       amount: 100,
-      bookingDetails: 'Booking ID: B003 - Hotel Booking',
+      bookingDetails: 'Transaction ID: B003 - Hotel Booking',
     },
   ];
 
@@ -63,7 +63,7 @@ const RewardsPage = () => {
 
 
             {/* Earnings Section */}
-            <h2 className="section-title">Payment History</h2>
+            <h2 className="section-title">Deposit History</h2>
         <div className="earning-item">
           <div>
             <p className="earning-title">-₦40 on first booking</p>
@@ -82,14 +82,14 @@ const RewardsPage = () => {
 
         <div className="earning-item">
           <div>
-            <p className="earning-title">-₦100 off for referring a friend</p>
+            <p className="earning-title">-₦10 off for referring a friend</p>
             <p className="earning-date">Paid on 02/12/24</p>
           </div>
           <p className="earning-amount">+₦10</p>
         </div>
 
         {/* Cashback History Section */}
-        <h2 className="section-title">Cashback History</h2>
+        <h2 className="section-title">Withdraw History</h2>
         <div className="cashback-history-section">
           {cashbackHistory.map((transaction, index) => (
             <div key={index} className="cashback-history-item">
