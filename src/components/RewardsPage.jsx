@@ -8,7 +8,7 @@ const RewardsPage = () => {
   const navigate = useNavigate();
 
   const handleLogout = () => {
-    navigate('/');
+    navigate('/Reward-Summary');
   };
 
   // Dummy data for cashback history
