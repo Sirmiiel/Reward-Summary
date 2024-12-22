@@ -280,7 +280,8 @@
     }
   
     .invite-button {
-      width: auto;
+      visibility: hidden;
+      width: 100px;
       margin-left: 24px;
     }
   

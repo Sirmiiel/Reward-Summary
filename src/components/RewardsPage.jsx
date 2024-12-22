@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './RewardsPage.css';
-import ProfilePic from '../assets/images/profilepic.jpeg';
+import ProfilePic from '../assets/images/avatar.png';
 
 const RewardsPage = () => {
 
@@ -50,8 +50,12 @@ const RewardsPage = () => {
             <img src={ProfilePic} alt="Profile Picture" />
             </div>
             <div className="profile-info">
-              <p className="profile-name">Hi, John!</p>
-              <p className="profile-balance">Total Paid: $350</p>
+              <p className="profile-name">Hi, Miss. Chidi!</p>
+              <p className="profile-balance">Total Amount: ₦120,000 <br />
+              Total Deposits: ₦250,000 <br />
+                Total Withdrawal: ₦130,000 <br />
+                Score: 75
+                </p>
             </div>
           </div>
           <button className="invite-button">Invite friends</button>
@@ -62,26 +66,26 @@ const RewardsPage = () => {
             <h2 className="section-title">Payment History</h2>
         <div className="earning-item">
           <div>
-            <p className="earning-title">-$40 on first booking</p>
+            <p className="earning-title">-₦40 on first booking</p>
             <p className="earning-date">Paid on 21/12/24</p>
           </div>
-          <p className="earning-amount">+$40</p>
+          <p className="earning-amount">+₦40</p>
         </div>
 
         <div className="earning-item">
           <div>
-            <p className="earning-title">-$50 off for referring a friend</p>
+            <p className="earning-title">-₦50 off for referring a friend</p>
             <p className="earning-date">Paid on 12/12/24</p>
           </div>
-          <p className="earning-amount">+$50</p>
+          <p className="earning-amount">+₦50</p>
         </div>
 
         <div className="earning-item">
           <div>
-            <p className="earning-title">-$100 off for referring a friend</p>
+            <p className="earning-title">-₦100 off for referring a friend</p>
             <p className="earning-date">Paid on 02/12/24</p>
           </div>
-          <p className="earning-amount">+$10</p>
+          <p className="earning-amount">+₦10</p>
         </div>
 
         {/* Cashback History Section */}
@@ -93,7 +97,7 @@ const RewardsPage = () => {
                 <p className="cashback-date">{transaction.date}</p>
                 <p className="cashback-booking">{transaction.bookingDetails}</p>
               </div>
-              <p className="cashback-amount">+${transaction.amount}</p>
+              <p className="cashback-amount">+₦{transaction.amount}</p>
             </div>
           ))}
         </div>
